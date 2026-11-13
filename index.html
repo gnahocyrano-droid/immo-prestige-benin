@@ -42,7 +42,7 @@ header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5;box-sha
 <a class="btn mobile-cta" href="#contact">☎ Contacter Immo Prestige Bénin</a>
 <script>
 /* IMPORTANT : remplacez le numéro ci-dessous par le numéro WhatsApp de l'agence, au format international sans + ni espaces. Exemple béninois : 229XXXXXXXX. */
-const WHATSAPP_NUMBER = "229XXXXXXXX";
+const WHATSAPP_NUMBER = "2290142756539";
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("searchForm").addEventListener("submit",function(e){e.preventDefault();const type=document.getElementById("typeSearch").value,city=document.getElementById("citySearch").value,op=document.getElementById("operationSearch").value;let count=0;document.querySelectorAll(".property").forEach(card=>{const show=(!type||card.dataset.type===type)&&(!city||card.dataset.city===city)&&(!op||card.dataset.op===op);card.style.display=show?"":"none";if(show)count++});document.querySelector("#biens .sub").textContent=count+" annonce(s) correspondante(s) — exemples à confirmer.";document.getElementById("biens").scrollIntoView({behavior:"smooth"});});
 document.querySelectorAll(".inquiry").forEach(a=>a.addEventListener("click",()=>{document.getElementById("clientMessage").value="Je souhaite obtenir des informations sur : "+a.dataset.item+". Merci de me contacter.";document.getElementById("clientNeed").value="Acheter un bien";}));
